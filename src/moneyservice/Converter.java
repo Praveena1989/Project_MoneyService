@@ -20,7 +20,7 @@ public final class Converter
  
   private double valueToConvert;
   private String convertFrom, convertTo;
-  private final String apiKey = "fef5694fe984bda06aed"; // registered to patrik-emil.gustafsson@yaelev.se
+  private final String apiKey = "fef5694fe984bda06aed";         // registered to patrik-emil.gustafsson@yaelev.se
  
   public Converter()
   {}
