@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * 
- *
+ * Enum class
  *
  */
 public enum Currency
