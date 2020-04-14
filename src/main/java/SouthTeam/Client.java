@@ -50,7 +50,7 @@ public class Client {
 		return name;
 	}
 	/**
-	 * @return the phoneNumabe
+	 * @return the phoneNumber
 	 */
 	public  String getPhoneNumber() {
 		return phoneNumber;
@@ -102,6 +102,7 @@ public class Client {
 	// To check the valid email id
 	public boolean emailCheck(String email)
 	{
+		//Regular expression to accept valid email id
 		String regex = "^(.+)@(.+)$";
 		boolean result = email.matches(regex);
 		return result;
