@@ -3,6 +3,8 @@
  */
 package SouthTeam;
 
+
+
 /**
  * @author Praveena
  *
@@ -59,6 +61,7 @@ public class Client {
 	public  String getEmail() {
 		return email;
 	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -68,6 +71,7 @@ public class Client {
 		result = prime * result + ((phoneNumber == null) ? 0 : phoneNumber.hashCode());
 		return result;
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -95,20 +99,16 @@ public class Client {
 		return true;
 	}
 
+	// To check the valid email id
 	public boolean emailCheck(String email)
 	{
-		int a = email.indexOf('@');
-		int b = email.indexOf('.');
-		if (a > -1)
-			return true;
-		if (b > -1)
-			return true;
-		if (a<b)
-			return true;
-		else
-			return false;
+		String regex = "^(.+)@(.+)$";
+		boolean result = email.matches(regex);
+		return result;
+		
 	}
-
+    
+	// To check the valid phone number
 	public boolean validPhoneNumber(String pno) {
 
 		//Regular expression to accept valid phone number
@@ -118,12 +118,11 @@ public class Client {
 		return result;
 
 	}
+	
 	@Override
 	public String toString() {
-		return String.format("Client [name=%s, phoneNumber =%s, email=%s]", name, phoneNumber, email);
+		return String.format("Client [name= %s | phoneNumber = %s| email= %s]", name, phoneNumber, email);
 	}
-
-
 
 
 
