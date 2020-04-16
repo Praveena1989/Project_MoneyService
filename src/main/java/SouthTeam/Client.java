@@ -90,6 +90,7 @@ public class Client {
 	}
 
 	// To check the valid email id
+	// To check the valid email id
 	public boolean emailCheck(String email)
 	{
 		//Regular expression to accept valid email id
